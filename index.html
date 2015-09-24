@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="css/pizzaform.css" rel="stylesheet" type="text/css" />
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>It's Pizza Time!</title>
+</head>
+<body>
+  <div class="container">
+    <img class="pizza" src="./img/dancepizza.gif" width="200px" height="200px">
+    <p><align="center"> So let's order a pizza! Fill out the form and we'll tally up the cost!</p></align>
+    <div id="wrap">
+      <form action="" id="pizzaform">
+        <div class="pizzaOrder">
+          <fieldset>
+            <label> Pizza Size</label>
+            <input type="radio"  name="selectedsize" value="Round4"
+            onclick="calculateTotal()" />
+            Round pizza 12" -  4 slices ($5.50)
+            <input type="radio"  name="selectedsize" value="Round6"
+            onclick="calculateTotal()" />
+            Round pizza 14" - 6 slices ($8.50)
+            <input type="radio"  name="selectedsize" value="Round8"
+            onclick="calculateTotal()" />
+            Round pizza 16" - 8 slices ($9.95)
+            <input type="radio"  name="selectedsize" value="Round12"
+            onclick="calculateTotal()" />
+            Round pizza 16" - 12 slices($13.50)
+            <input type="radio"  name="selectedsize" value="Round14"
+            onclick="calculateTotal()" />
+            Round pizza 18" - 14 slices($15.75)
+            <input type="radio"  name="selectedsize" value="Round18"
+            onclick="calculateTotal()" />
+            Round pizza 20" - 18 slices($18.25)
+            <input type="radio"  name="selectedsize" value="Round20"
+            onclick="calculateTotal()" />
+            Round pizza 40" - 36 slices($27.00)
+
+            <label> Toppings are $.50 each</label>
+            <input type="checkbox" id="toppings" name='toppings'
+            onclick="calculateTotal()"/> Extra Cheese
+            <input type="checkbox" id="toppings" name='toppings'
+            onclick="calculateTotal()"/> Pepperoni
+            <input type="checkbox" id="toppings" name='toppings'
+            onclick="calculateTotal()"/> Mushrooms
+            <input type="checkbox" id="toppings" name='toppings'
+            onclick="calculateTotal()"/> Sausage
+            <input type="checkbox" id="toppings" name='toppings'
+            onclick="calculateTotal()"/> Onions
+            <input type="checkbox" id="toppings" name='toppings'
+            onclick="calculateTotal()"/> Olives
+            <input type="checkbox" id="toppings" name='toppings'
+            onclick="calculateTotal()"/> Broccoli
+            <input type="checkbox" id="toppings" name='toppings'
+            onclick="calculateTotal()"/> Spinach
+            <input type="checkbox" id="toppings" name='toppings'
+            onclick="calculateTotal()"/> Ham
+            <input type="checkbox" id="toppings" name='toppings'
+            onclick="calculateTotal()"/> Pineapple
+            <input type="checkbox" id="toppings" name='toppings'
+            onclick="calculateTotal()"/> Green Peppers
+            <input type="checkbox" id="toppings" name='toppings'
+            onclick="calculateTotal()"/> Sweet Peppers
+            <div id="totalPrice"></div>
+          </fieldset>
+        </div>
+      </div>
+      </form>
+    </div>
+
+</body>
+</html>

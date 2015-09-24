@@ -1,0 +1,16 @@
+#result {
+  display: none;
+}
+
+.img.pizza {
+  align: center;
+
+}
+
+body {
+    background-image: url('../img/bg.gif');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
